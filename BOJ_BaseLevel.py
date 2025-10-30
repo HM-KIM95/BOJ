@@ -1,6 +1,10 @@
 import sys
 input = sys.stdin.readline
 
-a, b, c = map(int, input().split())
+a = input()
+b = input()
 
-print(a + b + c)
+a = int(a)
+b = int(b)
+
+print(a + b)
