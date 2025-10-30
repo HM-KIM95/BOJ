@@ -1,13 +1,21 @@
 import sys
 input = sys.stdin.readline
 
-N, K = map(int, input().split())
-coins = [int(input()) for _ in range(N)]
-coins.reverse()
-cnt = 0
+n = int(input())
+meetings = []
 
-for each_coin in coins:
-    cnt += K // each_coin
-    K = K % each_coin
+for _ in range(n):
+    start, end = map(int, input().split())
+    meetings.append((start, end))
     
-print(cnt)
+meetings.sort(key = lambda x : (x[1], x[0]))
+
+count = 0
+current_end = 0
+
+for s, e in meetings:
+    if s >= current_end:
+        count += 1
+        current_end = e
+        
+print(count)
