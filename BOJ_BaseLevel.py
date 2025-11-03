@@ -1,10 +1,8 @@
 import sys
 input = sys.stdin.readline
 
-a = input()
-b = input()
-
+a, b = input().split()
 a = int(a)
 b = int(b)
 
-print(a + b)
+print(a * b)
