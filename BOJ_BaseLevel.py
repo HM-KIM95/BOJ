@@ -1,2 +1,3 @@
-id = input()
-print(id + "??!")
+y = int(input())
+
+print(y - 543)
