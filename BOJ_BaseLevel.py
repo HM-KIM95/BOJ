@@ -1,13 +1,6 @@
-a = input()
-a = int(a)
+a = int(input())
 
-if a == 100:
-    print("A")
-elif 89 >= a >= 80:
-    print("B")
-elif 79 >= a >= 70:
-    print("C")
-elif 69 >= a >= 60:
-    print(D)
+if a % 4 == 0 and a % 100 != 0 or a % 400 == 0:
+    print("1")
 else:
-    print("F")
+    print("0")
