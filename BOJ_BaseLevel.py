@@ -1,13 +1,13 @@
-import sys
-input = sys.stdin.readline
+a = input()
+a = int(a)
 
-A, B = map(int, input().split())
-
-if A > B:
-    print(">")
-    
-elif A < B:
-    print("<")
-    
-elif A == B:
-    print("==")
+if a == 100:
+    print("A")
+elif 89 >= a >= 80:
+    print("B")
+elif 79 >= a >= 70:
+    print("C")
+elif 69 >= a >= 60:
+    print(D)
+else:
+    print("F")
