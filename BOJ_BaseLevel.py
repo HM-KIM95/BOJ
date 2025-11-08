@@ -1,11 +1,8 @@
-x = int(input())
-y = int(input())
+H, M = map(int, input().split())
+M -= 45
 
-if x > 0 and y > 0:
-    print("1")
-elif x < 0 and y > 0:
-    print("2")
-elif x < 0 and y < 0:
-    print("3")
-elif x > 0 and y < 0:
-    print("4")
+if M < 0:
+    H -= 1
+    
+print(H%24, M%60)
+    
