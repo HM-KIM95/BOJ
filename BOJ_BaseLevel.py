@@ -1,8 +1,12 @@
-H, M = map(int, input().split())
-L = int(input())
+a, b, c = map(int, input().split())
 
-M += L
-H += M//60
-    
-print(H%24, M%60)
-    
+if a == b == c :
+    prize = 10000 + a * 1000
+elif a == b or a == c:
+    prize = 1000 + a * 100
+elif b == c:
+    prize = 1000 + b * 100
+else:
+    prize = max(a, b, c) * 100
+
+print(prize)
