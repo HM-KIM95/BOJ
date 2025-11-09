@@ -1,8 +1,8 @@
 H, M = map(int, input().split())
-M -= 45
+L = int(input())
 
-if M < 0:
-    H -= 1
+M += L
+H += M//60
     
 print(H%24, M%60)
     
