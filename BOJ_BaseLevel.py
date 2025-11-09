@@ -1,4 +1,6 @@
-n = int(input())
-
-for i in range(1, 10):
-    print(f"{n} * {i} = {n * i}")
+print("         ,r'\"7")
+print("r`-_   ,'  ,/")
+print(" \. \". L_r'")
+print("   `~\/")
+print("      |")
+print("      |")
