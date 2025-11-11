@@ -1,4 +1,4 @@
 n = int(input())
-for _ in range(n):
-    a, b = [int(x) for x in input().split()]
-    print(a+b)
+for i in range(n):
+    n += i
+print(n)
